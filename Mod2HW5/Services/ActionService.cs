@@ -8,9 +8,9 @@ namespace Mod2HW5.Services
     {
         private readonly ILogger _logger;
 
-        public ActionService()
+        public ActionService(ILogger logger)
         {
-            _logger = new Logger();
+            _logger = logger;
         }
 
         public bool Method_1()
